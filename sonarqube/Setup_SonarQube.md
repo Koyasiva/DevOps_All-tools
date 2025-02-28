@@ -26,6 +26,8 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
 
 2. Change ownershipt to the user and Switch to Linux binaries directory to start service
    ```bash
+   useradd sonaradmin
+   id sonaradmin
    chown -R <sonar_user>:<sonar_user_group> /opt/sonarqube-x.x  
    cd /opt/sonarqube-x.x/bin/linux-x86-64   
    ./sonar.sh start
