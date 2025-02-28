@@ -29,7 +29,8 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
    useradd sonaradmin
    id sonaradmin
    chown -R <sonar_user>:<sonar_user_group> /opt/sonarqube-x.x  
-   cd /opt/sonarqube-x.x/bin/linux-x86-64   
+   cd /opt/sonarqube-x.x/bin/linux-x86-64
+   sudo chmod -R 777 /opt/sonarqube-x.x/bin/linux-x86-64
    ./sonar.sh start
    ```
 3. Connect to the SonarQube server through the browser. It uses port 9000.   
